@@ -17,5 +17,5 @@ public class UserInfo extends BaseEntity {
     private String userPassword;
     private String description;
     private Byte type;
-    private Integer shoId;
+    private Integer shopId;
 }
