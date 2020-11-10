@@ -11,7 +11,7 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 @Table(name = "category_info")
-public class CategoryInfo {
+public class CategoryInfo extends BaseEntity {
     private String categoryName;
     private Long parentId;
     private Integer level;
