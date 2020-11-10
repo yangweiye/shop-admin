@@ -7,7 +7,7 @@ dubbo:
 
   registry:
     protocol: zookeeper
-    address: 152.136.145.182
+    address: 192.168.0.4
     port: 2181
     timeout: 30000
   consumer:
@@ -60,7 +60,7 @@ spring:
       max-pool-prepared-statement-per-connection-size: 20
 
 rocketmq:
-  name-server: 152.136.145.182:9876
+  name-server: 192.168.0.4:9876
   producer:
     group: my-produce-group
     send-message-timeout: 30000
