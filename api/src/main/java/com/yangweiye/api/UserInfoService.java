@@ -8,7 +8,7 @@ import java.util.List;
 public interface UserInfoService {
     List<UserInfo> findAll();
 
-    UserInfo findById(Integer id);
+    UserInfo findById(Long id);
 
     Integer insertUser(UserInfo user);
 

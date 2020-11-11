@@ -22,7 +22,7 @@ public class UserInfoServiceImpl implements UserInfoService {
     }
 
     @Override
-    public UserInfo findById(Integer id) {
+    public UserInfo findById(Long id) {
         return userInfoMapper.selectByPrimaryKey(id);
     }
 
@@ -56,7 +56,7 @@ public class UserInfoServiceImpl implements UserInfoService {
         Example example = new Example(UserInfo.class);
         example.createCriteria().andEqualTo("userName", userName);
         UserInfo userInfo = userInfoMapper.selectOneByExample(example);
-        
+
         return userInfo;
     }
 }
